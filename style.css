@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-size: 16px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #887BB0;
+    background: #FFF4BD;
+}
+header {
+    padding: 1rem;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4B9B8;
+}
+.brand {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.navbar {
+    display: flex;
+
+}
+.hamburgur-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul :hover{
+     font-weight: 400;
+     font-size: 20px;
+ }
+
+nav a {
+    text-decoration: none;
+    padding: 5px;
+}
+.icons {
+    display: flex;
+    flex-direction: row-reverse; 
+    
+}
+.svg-icon {
+    width: 25px;
+    height: 25px; 
+  }
+  .svg-icon:hover {
+    width: 30px;
+    height: 30px; 
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #887BB0;
+  }
+  
+ 
+
+
