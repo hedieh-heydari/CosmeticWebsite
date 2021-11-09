@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 body {
     font-size: 16px;
@@ -74,6 +75,7 @@ nav a {
       flex-direction: row-reverse;
       margin: 1rem ;
       height: 360px;
+      margin:1rem
   }
   .banner {
       width: 80%;
@@ -107,12 +109,68 @@ nav a {
       margin: 5px;
       border-radius: 10px;
   }
-  .brushes {
-      background: url(./images/brushes.jpg);
-      height: 100px;
-      width: 90%;
-      background-position: center;
+
+
+
+  .title {
+      color: #85D2D0;
+    margin: 30px auto;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    position: relative;
   }
+  
+  .title:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #85D2D0;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .title:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #85D2D0;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+
+
+  .cards {
+      
+      display: grid;
+      grid-template-columns: repeat(auto-fit , minmax(200px , auto));
+      grid-gap: 10px;
+      width: calc(100% - 2rem);
+      margin:  0 auto;
+      padding: 30px auto;
+  }
+
+  .card {
+    box-shadow: 0 5px 5px rgba(0, 0, 0 , 0.5); 
+    border-radius: 10px;
+  }
+
+  .card-image {
+      width: 100%;
+      height: 250px;
+      padding: 5px;
+      border-radius: 10px;
+  }
+
+  .card-content {
+      padding: 10px;
+      font-weight: 600;     
+  }
+
 
 
 
@@ -126,6 +184,7 @@ nav a {
 
       .mainContent {
           flex-direction: column;
+          margin-bottom: 150px;
           
       }
       .banner{
@@ -134,13 +193,11 @@ nav a {
       .sidebar {
           flex-direction: row;
           width: 100%;
-          margin-top: 5px;
+          margin-top: 5px 0 200px 0;
       }
-
-      /* .sidebar img {
-          width: 100px;
-
-      } */
+      .cards {
+        grid-template-columns: 1fr;
+    }
 
   }
 
@@ -155,6 +212,8 @@ nav a {
 
     .mainContent {
         flex-direction: column;
+        margin-bottom: 10px;
+    
         
     }
     .banner{
@@ -163,7 +222,7 @@ nav a {
     .sidebar {
         flex-direction: row;
         width: 100%;
-        margin-top: 5px;
+        margin: 5px 0;
     }
     .sidebar img {
         width: 75px;
@@ -172,6 +231,8 @@ nav a {
     .brand {
         font-size: 15px;
     }
+
+   
 
 
   }
