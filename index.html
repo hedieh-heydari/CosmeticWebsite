@@ -8,6 +8,7 @@
     <title>Cosmetic Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
 
 <body>
@@ -15,7 +16,9 @@
         <div class="navbar">
             <div class="hamburgur-menu">
                 <svg class="svg-icon" viewBox="0 0 20 20">
-                    <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298"></path>
+                    <path
+                        d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
+                    </path>
                 </svg>
             </div>
             <p class="brand">Cosmetic Shop</p>
@@ -31,9 +34,8 @@
                             <li><a href="#">Face </a></li>
                         </div>
                     </div>
-                    
-                    <li><a href="#">contact </a></li>
-                    <li><a href="#">about </a></li>
+
+                    <li><a href="#contact">contact </a></li>
                 </ul>
             </nav>
         </div>
@@ -66,25 +68,23 @@
 
         </div>
     </header>
+
     <main>
-        <div class="mainContent">
+
+        <div class="mainContent" id="first">
             <div class="banner">
                 <img src="./images/banner.png" alt="site banner">
-
             </div>
             <div class="sidebar">
-               
                 <img src="./images/brushes.jpg" alt="makeup brushes">
                 <img src="./images/crrams.jpg" alt="creams ">
                 <img src="./images/skin sare.jpg" alt=" skin care">
             </div>
         </div>
 
-        
         <h2 class="title">Best Seller</h2>
-        
+
         <div class="cards">
-            
             <div class="card">
                 <img class="card-image" src="./images/bs1.jpg" alt="hair oil">
                 <p class="card-content">hair oil <br> 1$</p>
@@ -109,11 +109,50 @@
                 <img class="card-image" src="./images/bs6.jpg" alt="toner">
                 <p class="card-content">toner <br> 1$</p>
             </div>
-       
         </div>
-    </main>
-    
 
+        <h2 class="title"> New Products</h2>
+        <div class="new-products">
+            <div class="new-product">
+                <img src="./images/prfume.jpg" alt="perfume" class="image">
+                <div class="middle">
+                    <div class="text">perfume</div>
+                </div>
+            </div>
+
+            <div class="new-product">
+                <img src="./images/rollers.jpg" alt="roller" class="image">
+                <div class="middle">
+                    <div class="text">Roller</div>
+                </div>
+            </div>
+            <div class="new-product">
+                <img src="./images/bags.jpg" alt="bag" class="image">
+                <div class="middle">
+                    <div class="text">Bag</div>
+                </div>
+            </div>
+            <div class="new-product">
+                <img src="./images/nails.jpg" alt="nailpolish" class="image">
+                <div class="middle">
+                    <div class="text">NailPolish</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="logos" id="contact">
+            <a href=" https://github.com/hedieh-heydari"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hedieh-heydari-6747591b1"><i class="fab fa-linkedin"></i></a>
+            <a href="Mailto:heydari.hedihe2680@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+
+        <div class="designed-by">
+            <p>Designed by : Hedieh Heydari</p>
+        </div>
+        <a href="#first"><i class="fas fa-chevron-up"></i></a>
+    </footer>
 
 </body>
 

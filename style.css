@@ -209,6 +209,81 @@ nav a {
   }
 
 
+.new-products {
+    display: flex;
+     width: calc(100% - 2rem);
+     margin: 0 auto 20px ;
+     padding: 30px auto;
+}
+
+  .new-product {
+    position: relative;
+    width: 50%;
+    margin: 5px;
+  }
+  
+  .image {
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0 , 0.5); 
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .new-product:hover .image {
+    opacity: 0.6;
+  }
+  
+  .new-product:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 16px 32px;
+  }
+
+  footer {
+      background:#F4B9B8 ;
+      width: 100%;
+      padding: 20px;
+      position: relative;
+ 
+  }
+  .fa-chevron-up {
+      position: absolute;
+      bottom: 5px;
+      left: 5;
+  }
+  .logos
+  {
+      text-align: center;
+      font-size: 2rem;
+      color:#887BB0 ;
+      padding: 5px;
+  }
+  .logos a {
+      color:#887BB0 ;
+  }
+  .designed-by {
+    text-align: center;
+  }
+
+
 
 
   @media (min-width : 481px) and (max-width:769px) {
@@ -235,6 +310,12 @@ nav a {
       .cards {
         grid-template-columns: 1fr;
     }
+
+    .new-products {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
 
   }
 
@@ -268,6 +349,15 @@ nav a {
     .brand {
         font-size: 15px;
     }
+
+    .new-products {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+  
+
+   
 
    
 
